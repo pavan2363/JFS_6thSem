@@ -56,7 +56,7 @@ document.getElementById("regForm").addEventListener("submit", function (e) {
     msg += "<b>Selected Subjects:</b><br>";
 
     for (let j = 0; j < selectedSubjects.length; j++) {
-        msg += "- " + selectedSubjects[j] + "<br>";
+        msg += j+1 + "." + " " + selectedSubjects[j] + "<br>";
     }
 
     msg += "<br><b>Total Fee:</b> $" + totalAmount;
